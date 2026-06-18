@@ -12,52 +12,50 @@ interface GalleryImage {
   category: string
   aspect: 'portrait' | 'landscape'
 }
-
 const galleryImages: GalleryImage[] = [
-  {
-    id: 1,
-    src: '/images/gallery/gallery-1.jpg',
-    alt: 'Bridal hair styling',
-    category: 'Bridal',
-    aspect: 'portrait',
-  },
-  {
-    id: 2,
-    src: '/images/gallery/gallery-2.jpg',
-    alt: 'Colour transformation',
-    category: 'Hair',
-    aspect: 'landscape',
-  },
-  {
-    id: 3,
-    src: '/images/gallery/gallery-3.jpg',
-    alt: 'Nail art design',
-    category: 'Nails',
-    aspect: 'portrait',
-  },
-  {
-    id: 4,
-    src: '/images/gallery/gallery-4.jpg',
-    alt: 'Facial treatment',
-    category: 'Beauty',
-    aspect: 'landscape',
-  },
-  {
-    id: 5,
-    src: '/images/gallery/gallery-5.jpg',
-    alt: 'Wedding makeup',
-    category: 'Bridal',
-    aspect: 'portrait',
-  },
-  {
-    id: 6,
-    src: '/images/gallery/gallery-6.jpg',
-    alt: 'Hair styling',
-    category: 'Hair',
-    aspect: 'landscape',
-  },
-]
-
+    {
+      id: 1,
+      src: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=80',
+      alt: 'Bridal hair styling',
+      category: 'Bridal',
+      aspect: 'portrait',
+    },
+    {
+      id: 2,
+      src: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1200&q=80',
+      alt: 'Colour transformation',
+      category: 'Hair',
+      aspect: 'landscape',
+    },
+    {
+      id: 3,
+      src: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1200&q=80',
+      alt: 'Nail art design',
+      category: 'Nails',
+      aspect: 'portrait',
+    },
+    {
+      id: 4,
+      src: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1200&q=80',
+      alt: 'Facial treatment',
+      category: 'Beauty',
+      aspect: 'landscape',
+    },
+    {
+      id: 5,
+      src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=1200&q=80',
+      alt: 'Wedding makeup',
+      category: 'Bridal',
+      aspect: 'portrait',
+    },
+    {
+      id: 6,
+      src: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1200&q=80',
+      alt: 'Hair styling',
+      category: 'Hair',
+      aspect: 'landscape',
+    },
+  ];
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null)
   const ref = useRef(null)

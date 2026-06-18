@@ -16,61 +16,67 @@ interface TeamMember {
 }
 
 const teamMembers: TeamMember[] = [
-  {
-    id: 1,
-    name: 'Sarah Perera',
-    role: 'Creative Director',
-    specialty: 'Hair & Bridal Styling',
-    image: '/images/team/sarah.jpg',
-    experience: '15+ Years',
-    quote: 'Creating timeless beauty through art and precision.',
-  },
-  {
-    id: 2,
-    name: 'Michael Fernando',
-    role: 'Senior Stylist',
-    specialty: 'Colour & Texture',
-    image: '/images/team/michael.jpg',
-    experience: '12+ Years',
-    quote: 'Transforming hair into a canvas of colour and light.',
-  },
-  {
-    id: 3,
-    name: 'Amara Jayawardena',
-    role: 'Beauty Specialist',
-    specialty: 'Facials & CACI Lift',
-    image: '/images/team/amara.jpg',
-    experience: '10+ Years',
-    quote: 'Revealing natural radiance through advanced skincare.',
-  },
-  {
-    id: 4,
-    name: 'Priya Rajapaksa',
-    role: 'Nail Artist',
-    specialty: 'Manicures & Pedicures',
-    image: '/images/team/priya.jpg',
-    experience: '8+ Years',
-    quote: 'Every detail matters in the art of nail design.',
-  },
-  {
-    id: 5,
-    name: 'Nuwan Wickramasinghe',
-    role: 'Senior Stylist',
-    specialty: 'Hair Dressing & Keratin',
-    image: '/images/team/nuwan.jpg',
-    experience: '11+ Years',
-    quote: 'Healthy hair is the foundation of beautiful styling.',
-  },
-  {
-    id: 6,
-    name: 'Dilini Abeysekera',
-    role: 'Makeup Artist',
-    specialty: 'Bridal & Editorial Makeup',
-    image: '/images/team/dilini.jpg',
-    experience: '9+ Years',
-    quote: 'Enhancing natural beauty for unforgettable moments.',
-  },
-]
+    {
+      id: 1,
+      name: 'Sarah Perera',
+      role: 'Creative Director',
+      specialty: 'Hair & Bridal Styling',
+      image:
+        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80',
+      experience: '15+ Years',
+      quote: 'Creating timeless beauty through art and precision.',
+    },
+    {
+      id: 2,
+      name: 'Michael Fernando',
+      role: 'Senior Stylist',
+      specialty: 'Colour & Texture',
+      image:
+        'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80',
+      experience: '12+ Years',
+      quote: 'Transforming hair into a canvas of colour and light.',
+    },
+    {
+      id: 3,
+      name: 'Amara Jayawardena',
+      role: 'Beauty Specialist',
+      specialty: 'Facials & CACI Lift',
+      image:
+        'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&q=80',
+      experience: '10+ Years',
+      quote: 'Revealing natural radiance through advanced skincare.',
+    },
+    {
+      id: 4,
+      name: 'Priya Rajapaksa',
+      role: 'Nail Artist',
+      specialty: 'Manicures & Pedicures',
+      image:
+        'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800&q=80',
+      experience: '8+ Years',
+      quote: 'Every detail matters in the art of nail design.',
+    },
+    {
+      id: 5,
+      name: 'Nuwan Wickramasinghe',
+      role: 'Senior Stylist',
+      specialty: 'Hair Dressing & Keratin',
+      image:
+        'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80',
+      experience: '11+ Years',
+      quote: 'Healthy hair is the foundation of beautiful styling.',
+    },
+    {
+      id: 6,
+      name: 'Dilini Abeysekera',
+      role: 'Makeup Artist',
+      specialty: 'Bridal & Editorial Makeup',
+      image:
+        'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80',
+      experience: '9+ Years',
+      quote: 'Enhancing natural beauty for unforgettable moments.',
+    },
+  ];
 
 const containerVariants = {
   hidden: { opacity: 0 },
