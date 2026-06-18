@@ -12,12 +12,22 @@ import Footer from './components/Footer'
 
 export default function Home() {
   useEffect(() => {
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener('click', function (e) {
+    const anchors = document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]')
+  
+    anchors.forEach((anchor) => {
+      anchor.addEventListener('click', (e) => {
         e.preventDefault()
-        const target = document.querySelector(this.getAttribute('href')!)
+  
+        const href = anchor.getAttribute('href')
+        if (!href) return
+  
+        const target = document.querySelector(href)
+  
         if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          })
         }
       })
     })
